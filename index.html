@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="my"> <!-- ဘာသာစကားကို မြန်မာ (my) ပြောင်းထားပါတယ် -->
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="မင်းအတွက် သီးသန့်ဖန်တီးထားတဲ့ အမှတ်တရလက်ဆောင်မွန်လေး"> <!-- မြန်မာလို ပြောင်းထားပါတယ် -->
+  <meta name="author" content="Thura Hein Htet"> <!-- မင်းနာမည် ပြောင်းရေးလို့ရပါတယ် -->
+  <meta name="theme-color" content="#ffe">
+
+  <!-- Open Graph (Facebook/Messenger မှာ link ပို့ရင် ပေါ်မယ့်စာသားများ) -->
+  <meta property="og:title" content="For My Love | ချစ်သူသက်တမ်းမှတ်တမ်း">
+  <meta property="og:description" content="တို့နှစ်ယောက်ရဲ့ အမှတ်တရနေ့ရက်လေးများ">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com"> <!-- နောက်မှ link ထည့်ပါ -->
+
+  <!-- Title & Resources -->
+  <title>For My Sweetheart | တို့နှစ်ယောက်ရဲ့ ကမ္ဘာ</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <script src="config.js"></script>
+</head>
+<style>
+  /* မြန်မာစာသားတွေ အားလုံးမှာ Font လှလှလေး ပေါ်အောင် CSS နည်းနည်း ထပ်ထည့်ထားပါတယ် */
+  body {
+    font-family: 'Padauk', sans-serif;
+  }
+</style>
+<body>
+  <!-- Background Music -->
+  <audio loop id="bgm" preload="auto" aria-label="Background music">
+    <source src="bgm.mp3" type="audio/mpeg">
+  </audio>
+  
+  <!-- Main Container -->
+  <div id="viewport">
+    <div id="main">
+      <!-- Love Letter Content -->
+      <div id="letter" role="article"></div>
+      
+      <!-- Time Counter -->
+      <div id="clock-box" role="timer">
+        <div id="clock-text"></div>
+        <div id="clock"></div>
+      </div>
+      
+      <!-- Ground Canvas -->
+      <canvas id="ground-canvas" aria-hidden="true"></canvas>
+
+      <!-- Static Canvas (tree) -->
+      <canvas id="static-canvas" aria-hidden="true"></canvas>
+
+      <!-- Dynamic Canvas (falling hearts) -->
+      <canvas id="canvas" aria-label="Animated tree with hearts"></canvas>
+    </div>
+  </div>
+  
+  <!-- Main Script (ဖိုင်လမ်းကြောင်းတွေ မှန်မမှန် သေချာစစ်ပါ) -->
+  <script src="js/geometry.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="js/tree.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
